@@ -137,7 +137,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    max-height: 1700px; 
+    max-height: 1800px; 
 }
 .about__top{ /*задаем параметры для всех секцих и вообще всего что находится в этой части*/
     display: flex;
