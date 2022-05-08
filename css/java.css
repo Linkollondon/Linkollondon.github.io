@@ -1,59 +1,72 @@
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
-.container{
+
+.container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
-body{
-/*font-family: 'Roboto', light;*/
-font-family: 'PT Serif', light;
-font-weight: 400;
-line-height: 18px;
-color: #5e5e5e;
+
+body {
+    /*font-family: 'Roboto', light;*/
+    font-family: 'PT Serif', light;
+    font-weight: 400;
+    line-height: 18px;
+    color: #5e5e5e;
+    min-width: 1170px;
 }
-header{
+
+header {
     font-family: 'Roboto', light;
     line-height: 85px;
     background-color: #05070C;
 }
-.header__content-inner{
+
+.header__content-inner {
     display: flex;
     justify-content: space-between;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
 }
-.menu a{
+
+.menu a {
     color: #FFFFFB;
     font-size: 16px;
     line-height: 36px;
     border: 1px solid transparent;
     padding: 0px 16px;
-    transition: all .4s; 
+    transition: all .4s;
 }
+
 .menu a:hover {
     border-color: #FFFFFB;
 }
-.menu li + li{
+
+.menu li+li {
     padding-left: 10px;
 }
-#modal{
+
+#modal {
     display: none;
 }
+
 /* .slider{
     background-image: url(../img/pexels-yaroslav-shuraev-7688762.jpg);
     background-repeat: no-repeat;
@@ -107,10 +120,11 @@ header{
 
 .block {
     background-color: #05070C;
-    opacity:73%; /*прозрачность */ /*
+    opacity:73%; /*прозрачность */
+/*
     border: 1px solid rgb(36, 36, 36); 
     border-radius: 35px; /*скругление углов */
-    /*width: 15%; 
+/*width: 15%; 
     height: 15%;
     align-items: center;
     width: 50%;
@@ -132,55 +146,70 @@ header{
     line-height: 26px; /*междустрочный интервал
 }*/
 
-.about{
+.about {
     background-image: url(../img/pexels-aleksandar-pasaric-1820770.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    max-height: 1700px; 
+    min-height: 1700px;
 }
-.about__top{ /*задаем параметры для всех секцих и вообще всего что находится в этой части*/
+
+.about__top {
+    /*задаем параметры для всех секцих и вообще всего что находится в этой части*/
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px; /*задаём отступ для всего родителя, чтобы между нашм 3 фото и наши услуги был отступ*/
+    margin-bottom: 50px;
+    /*задаём отступ для всего родителя, чтобы между нашм 3 фото и наши услуги был отступ*/
 }
-.about__title-box{
+
+.about__title-box {
     /*max-width: 100px; /*задаём максимальную ширину для наши услуги т.е. путон и применение*/
-    /*padding-left: 100px;*/ /*в нашем случае для путон это не нужно, лишний отступ получается*/
+    /*padding-left: 100px;*/
+    /*в нашем случае для путон это не нужно, лишний отступ получается*/
     position: relative;
     margin-top: 50px;
     margin-left: 15px;
 }
-.about-title{ /*задаём параметры для наши услуги*/
+
+.about-title {
+    /*задаём параметры для наши услуги*/
     font-size: 50px;
     font-weight: 500;
     margin-top: 15%;
     line-height: 24px;
     color: #FFFFFB;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 20px;/*отступ снизу от наши услуги*/
-    }
-    .about__text{ /*применение*/
-        font-size: 30px;
-        color: #FFFFFB;
-        font-family: 'Roboto', light;
-        margin-top: 30px;   
-    }
-    
-.about__items{ /*родитель 3 фотографий*/   
-display: flex;
-justify-content: space-between;
-margin-left: 13px;
+    padding-bottom: 20px;
+    /*отступ снизу от наши услуги*/
 }
-.about__item{ /*задаём параметры для наших 3 секций*/
+
+.about__text {
+    /*применение*/
+    font-size: 30px;
+    color: #FFFFFB;
+    font-family: 'Roboto', light;
+    margin-top: 30px;
+}
+
+.about__items {
+    /*родитель 3 фотографий*/
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13px;
+}
+
+.about__item {
+    /*задаём параметры для наших 3 секций*/
     max-width: 320px;
     padding: 30px 0px 80px;
     position: relative;
     max-height: 465px;
     background: #05070C;
     opacity: 70%;
-    border-radius: 35px; /*скругление углов */
+    border-radius: 35px;
+    /*скругление углов */
 }
+
 /*.about__item-title{ /*банкротство и ливидация
 color: #FFFFFB;
 font-size: 18px;
@@ -188,70 +217,86 @@ line-height: 24px;
 font-weight: 500;
 padding: 0px 15px; /*отступы по бокам внутри секций
 }*/
-.about__item-text{ /*текст в секциях 3 наших*/
-font-family: 'Roboto', sans-serif;
-color: #FFFFFB;
-letter-spacing: 0.1px;
-padding: 0px 15px; /*отступы по бокам внутри секций*/
-padding: 0px 30px 30px;
-line-height: 20px; /*междустрочный интервал*/
+.about__item-text {
+    /*текст в секциях 3 наших*/
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFB;
+    letter-spacing: 0.1px;
+    padding: 0px 15px;
+    /*отступы по бокам внутри секций*/
+    padding: 0px 30px 30px;
+    line-height: 20px;
+    /*междустрочный интервал*/
 }
-.about__items1{ /*родитель 3 фотографий*/   
+
+.about__items1 {
+    /*родитель 3 фотографий*/
     margin-left: 13px;
     margin-top: 7%;
-    }
+}
 
-    .about__item1{ /*задаём параметры для наших 3 секций*/
-        max-width: 100%;
-        padding: 30px 0px 80px;
-        position: relative;
-        max-height: 320px;
-        background: #05070C;
-        opacity: 70%;
-        border-radius: 35px; /*скругление углов */
-    }
-    .about__item-text1{ /*текст в секциях 3 наших*/
-        font-family: 'Roboto', sans-serif;
-        color: #FFFFFB;
-        letter-spacing: 0.1px;
-        padding: 0px 15px; /*отступы по бокам внутри секций*/
-        padding: 0px 30px 30px;
-        line-height: 20px; /*междустрочный интервал*/
-        
-    }
-    .text{
-        opacity: none;
-        font-size: 24px;
-    }
-    .about__link{
+.about__item1 {
+    /*задаём параметры для наших 3 секций*/
+    max-width: 100%;
+    padding: 30px 0px 80px;
+    position: relative;
+    max-height: 320px;
+    background: #05070C;
+    opacity: 70%;
+    border-radius: 35px;
+    /*скругление углов */
+}
+
+.about__item-text1 {
+    /*текст в секциях 3 наших*/
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFB;
+    letter-spacing: 0.1px;
+    padding: 0px 15px;
+    /*отступы по бокам внутри секций*/
+    padding: 0px 30px 30px;
+    line-height: 20px;
+    /*междустрочный интервал*/
+
+}
+
+.text {
+    opacity: none;
+    font-size: 24px;
+}
+
+.about__link {
     background-color: #05070C;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     margin-top: 100px;
     min-height: 500px;
     opacity: 90%;
-    }
-    
-    .link{
+}
+
+.link {
     justify-content: space-between;
     display: flex;
     font-size: 16px;
     color: #FFFFFB;
     font-family: 'Roboto', sans-serif;
     padding-top: 5%;
- 
-    }
-    .ass{
-     margin-bottom: 60px;
-     margin-right: 15%;
-     line-height: 30px;
-    }
-    .image{
-        margin-left: 15%;
-        margin-top: 20px;
-    }
-    .text__pyton {
+
+}
+
+.ass {
+    margin-bottom: 60px;
+    margin-right: 15%;
+    line-height: 30px;
+}
+
+.image {
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.text__pyton {
     color: #FFFFFB;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
@@ -261,23 +306,27 @@ line-height: 20px; /*междустрочный интервал*/
     margin-bottom: 20px;
 
 
-    }
-    .link p{
-        font-size: 24px;
-        opacity: 80%;
-       }
-    .link a{
+}
+
+.link p {
+    font-size: 24px;
+    opacity: 80%;
+}
+
+.link a {
     color: #FFFFFB;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
     font-size: 18px;
     opacity: 80%;
-    }
-    .link a:hover{
-    color:#2D8D79;
+}
+
+.link a:hover {
+    color: #2D8D79;
     opacity: 70%;
-   }
-   .footer__copy{
+}
+
+.footer__copy {
     background-color: #05070C;
     text-align: center;
     font-size: 12px;
@@ -286,5 +335,5 @@ line-height: 20px; /*междустрочный интервал*/
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFB;
-  
+
 }
